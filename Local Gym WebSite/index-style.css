@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Baloo Bhai 2", cursive;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("img/background-image.jpg");
+    color: white;
+    background-size: cover;
+  }
+  .container{
+    display: flex;
+      /* border: 2px solid burlywood; */
+      margin: 106px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 28px;
+  }
+  .form-group input{
+    display: block;
+    border-radius: 5px;
+    margin: 25px auto;
+    font-family: 'Baloo Bhai', 'cursive';
+    font-size: large;
+    text-align: center;
+    width: 250% ;
+    padding: 2px;
+    border: 3px solid black;
+    margin: 12px auto;
+  }
+  .container button{
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .some-content{
+    margin:2%;
+    background-color: rgba(128, 128, 128, 0.301);
+    text-align: center;
+  }
+  .parent{
+    display: flex;
+  }
+  @media (max-width:750px){
+    .parent{
+      display: flex;
+      flex-direction: column;
+    }
+  }
