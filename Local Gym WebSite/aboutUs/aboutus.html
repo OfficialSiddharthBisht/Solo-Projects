@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<link rel="stylesheet" href="/styles/navbarStyle.css">
+<link rel="stylesheet" href="aboutusStyle.css">
+<link rel="stylesheet" href="/styles/footerStyle.css">
+<body>
+    <header id="header">
+
+    </header>
+    <div class="container">
+        <div class="content1">
+            <h1><u>The best gym in and around Nainital</u></h1>
+            <p>Fitness junction is one of the best gym in Nainital and this is not said by us this is said by the professional athelete in the city who have played in and around here. Not just for working out but also for engaging with people , here the culture that is built is just for you. We are open 12 X 7 . Yes ! on sundays too.
+            </p>
+            <p>This gym is set up by Siddharth Bisht to give the best and premium gym experience that anyone can have and has achieved what it is made for.To know more about us just call us at our number or you can also text us on our whatsapp. We will get back to you after the text too.</p>
+            <p>Just click the call us now button to know more.</p>
+        </div>
+        <div class="content2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus minima eaque quo beatae unde! Omnis cum rerum ipsum reprehenderit molestias eaque ipsam ea animi, laboriosam temporibus, quidem pariatur vel nesciunt libero soluta consectetur eius harum quas magni quis expedita quaerat dolores autem. Officia dolores laborum in, neque quaerat fuga accusantium?</p>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script type="module">
+        import navbar from "/components/navbar.js";
+        import footer from "/components/footer.js";
+        let downfooter = document.getElementById("footer");
+        let header = document.getElementById("header");
+        header.innerHTML = navbar();
+        downfooter.innerHTML = footer();
+    </script>
+</body>
+</html>
