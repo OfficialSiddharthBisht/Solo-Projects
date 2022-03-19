@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/styles/footerStyle.css">
+    <link rel="stylesheet" href="/styles/navbarStyle.css">
+    <style>
+        body{
+            background-color: gray;
+        }
+        #header{
+            background-color: black;
+        }
+        .content{
+            margin: 10%;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <header id = "header">
+
+    </header>
+    <div class="content">
+        <h1>Tell us how can we help you ?</h1>
+        <p>We are just one text away . Press the call us now or Email us button and get the information and exciting offers and discount. </p>
+        <p>We are always happy to server you.</p>
+    </div>
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script type="module">
+        import navbar from "/components/navbar.js";
+        import footer from "/components/footer.js";
+        let downfooter = document.getElementById("footer");
+        let header = document.getElementById("header");
+        downfooter.innerHTML = footer();
+        header.innerHTML = navbar(); 
+    </script>
+</body>
+</html>
