@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #176d7c94;
+    color: rgb(54, 14, 14);
+}
+.footer a{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:rgb(219, 186, 186);
+}
+.footer li{
+    list-style: none;
+    text-align: center;
+    margin: 15%;
+    font-size: large;
+}
+.footer h2{
+  text-align: center;  
+}
