@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Junction</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="styles/navbarStyle.css">
+    <link rel="stylesheet" href="styles/footerStyle.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;432&family=Lato:wght@300&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id = "header">
+     
+    </header>
+    <!-- container for contents -->
+    <div class="parent">
+      <div class="container">
+          <h2>Join the best gym in Nainital</h2>
+          <form action="">
+            <div class="form-group">
+              <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+              <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+              <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+      </div>
+      <div class="some-content">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, veritatis nesciunt aliquam necessitatibus asperiores dolorem dolorum eum omnis maxime repellat? Assumenda obcaecati saepe itaque laudantium ducimus ipsam reiciendis pariatur aperiam? Odit saepe nobis adipisci sit perferendis quibusdam enim molestiae, similique illum voluptatum rem ab reiciendis odio nemo, at optio nisi!</p>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eos hic natus, dignissimos repudiandae, distinctio fugit porro praesentium repellendus est velit? Dolor temporibus ducimus obcaecati enim quis, similique fugit a.</p>
+      </div>
+      </div>
+    <footer id="footer" class="footer">
+
+    </footer>    
+  </body>
+  <script type ="module">
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+    let downfooter = document.getElementById("footer");
+    let header = document.getElementById("header");
+    downfooter.innerHTML = footer();
+    header.innerHTML = navbar();
+  </script>
+</html>
