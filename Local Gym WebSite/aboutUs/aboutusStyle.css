@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-size: cover;
+    background-image: url("/img/background-image.jpg");
+}
+.content1{
+    margin: 10%;
+}
+p{
+    font-size: x-large;
+    background-color: gray;
+}
