@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="globalStyle.css">
+</head>
+<style>
+     form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        width: 60%;
+    }
+    form *{
+        margin: 7px;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="men.html">Men</a></div>
+            <div><a href="women.html">Women</a></div>
+            <div><a href="logIn.html">Log-In</a></div>
+            <div><a href="signIn.html">Sign-Up</a></div>
+        </div>
+    </header>
+        <h1>Log-IN</h1>
+        <form>
+            <input type="email" id = "enteredEmail"placeholder="Enter Your Registered Email" />
+            <input type="password" id="enteredPassword" placeholder="Enter your password" />
+            <input type="submit" value="Log In" />
+        </form>
+   <script>
+       let userArr;
+       if(localStorage.getItem('userArr') === null){
+           userArr = [];
+       }else{
+           userArr = JSON.parse(localStorage.getItem('userArr'))
+       }
+       document.querySelector("form").addEventListener('submit',(event)=>{
+            event.preventDefault();
+            loginObj = {
+               enteredEmail: document.getElementById("enteredEmail").value,
+               enteredPassword : document.getElementById("enteredPassword").value,
+           }
+           userArr.forEach(obj => {
+            //    console.log(loginObj.enteredEmail , enteredEmail);
+            //    console.log(loginObj.password , enteredPassword);
+            if((loginObj.enteredEmail === obj.email) && (loginObj.enteredPassword === obj.password)){
+               alert("Login Successful");
+               document.location.href = "men.html";
+            }
+           });
+           
+       });
+   </script>
+</body>
+</html>

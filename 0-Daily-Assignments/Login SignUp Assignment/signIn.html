@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="globalStyle.css">
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        width: 60%;
+    }
+    form *{
+        margin: 7px;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="men.html">Men</a></div>
+            <div><a href="women.html">Women</a></div>
+            <div><a href="logIn.html">Log-In</a></div>
+            <div><a href="signIn.html">Sign-Up</a></div>
+        </div>
+    </header>
+    <h1>Sign Up</h1>
+    <form>
+        <input id= "email" type="email" placeholder="Enter your e-mail" />
+        <input id="number" type="number" placeholder="Enter your phone number" />
+        <input id="password" type="password" placeholder="Enter your password" />
+        <input type="submit" value="Register"/>
+    </form>
+    <script>
+        let userArr;
+        if(localStorage.getItem('userArr') === null){
+            userArr = [];
+        }else{
+            userArr = JSON.parse(localStorage.getItem('userArr'));
+        }
+        let submit = document.querySelector("form");
+        submit.addEventListener('submit',(event)=>{
+            event.preventDefault;
+            let userObj = {
+                email :document.getElementById("email").value,
+                number: document.getElementById("number").value,
+                password: document.querySelector("#password").value,
+            }
+            userArr.push(userObj);
+            localStorage.setItem('userArr',JSON.stringify(userArr));
+        });
+        
+        </script>
+</body>
+</html>
